@@ -23,11 +23,11 @@ defaultGithubProject = "YOUR_PROJECT_HERE"
 
 parser = argparse.ArgumentParser(description='Get event timestamps from a GitHub repo.')
 parser.add_argument('--token',
-                        nargs='?',
+                        nargs=1,
                         default=defaultGithubToken,
                         help='GitHub API token')
 parser.add_argument('--project',
-                        nargs='?',
+                        nargs=1,
                         default=defaultGithubProject,
                         help='GitHub project to scan, default: ' + defaultGithubProject)
 parser.add_argument('repo',
